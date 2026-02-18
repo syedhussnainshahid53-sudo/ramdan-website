@@ -12,7 +12,7 @@ body{
     align-items:center;
     text-align:center;
     background: url("./images/bg.jpeg") no-repeat center center;
-    background-size: 100px 650px;   /* Desktop full screen */
+    background-size: cover;   /* Desktop full screen */
     position:relative;
 }
 
@@ -119,5 +119,6 @@ footer{
     }
 
 }
+
 
 

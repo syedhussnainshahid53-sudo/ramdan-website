@@ -94,27 +94,28 @@ footer{
 
 /* ================= MOBILE RESPONSIVE ================= */
 
-@media (max-width: 768px){
-
-    body{
-        background-size: cover;     /* Full mobile screen */
-        background-position: center;
-    }
+@media (max-width: 480px){
 
     .card{
-        padding:35px 20px;
+        padding:25px 15px;
+        border-radius:15px;
     }
 
     .card h1{
-        font-size:32px;
+        font-size:26px;
     }
 
     .card h3{
-        font-size:18px;
+        font-size:16px;
     }
 
     .card p{
-        font-size:15px;
+        font-size:14px;
+        line-height:1.4;
+    }
+
+    footer{
+        font-size:11px;
     }
 
 }

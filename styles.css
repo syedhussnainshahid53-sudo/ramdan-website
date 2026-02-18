@@ -14,7 +14,6 @@ body{
     background: url("./images/bg.jpeg") no-repeat center center;
     background-size: 100% 650px;   /* Desktop full screen */
     position:relative;
-    overflow:hidden;
 }
 
 /* Dark Overlay */
@@ -119,3 +118,4 @@ footer{
     }
 
 }
+

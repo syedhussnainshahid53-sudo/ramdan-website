@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background: url("./picture/bg.jpeg") no-repeat center center;
+    background-size: cover;   /* Desktop full screen */
+    position:relative;
+    overflow:hidden;
+}
+
+/* Dark Overlay */
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    z-index:1;
+}
+
+/* Card Design */
+.card{
+    position:relative;
+    z-index:2;
+    background:rgba(255,255,255,0.1);
+    padding:50px 40px;
+    border-radius:20px;
+    backdrop-filter: blur(10px);
+    box-shadow:0 10px 40px rgba(0,0,0,0.4);
+    max-width:600px;
+    width:90%;
+    color:#fff;
+    animation: fadeIn 2s ease;
+}
+
+.card h3{
+    font-weight:300;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.card h1{
+    font-size:48px;
+    font-weight:800;
+    color:#ffd369;
+    margin-bottom:20px;
+    animation: glow 2s infinite alternate;
+}
+
+.card p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+footer{
+    position:absolute;
+    bottom:10px;
+    width:100%;
+    text-align:center;
+    color:#fff;
+    z-index:2;
+    font-size:14px;
+}
+
+/* Animations */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px #ffd369;
+    }
+    to{
+        text-shadow:0 0 25px #ffd369, 0 0 40px #ffb703;
+    }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px){
+
+    body{
+        background-size: cover;     /* Full mobile screen */
+        background-position: center;
+    }
+
+    .card{
+        padding:35px 20px;
+    }
+
+    .card h1{
+        font-size:32px;
+    }
+
+    .card h3{
+        font-size:18px;
+    }
+
+    .card p{
+        font-size:15px;
+    }
+
+}

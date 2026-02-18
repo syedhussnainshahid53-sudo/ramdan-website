@@ -11,8 +11,8 @@ body{
     justify-content:center;
     align-items:center;
     text-align:center;
-    background: url("./picture/bg.jpeg") no-repeat center center;
-    background-size: cover;   /* Desktop full screen */
+    background: url("./images/bg.jpeg") no-repeat center center;
+    background-size: 100% 650px;   /* Desktop full screen */
     position:relative;
     overflow:hidden;
 }
